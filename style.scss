@@ -1,0 +1,45 @@
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+
+$blue:   #009fd9;
+
+$spacer: 0.875rem;
+
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+
+$font-size-base: 0.875rem; // Approximately 14px
+$font-size-lg: 1rem;
+$font-size-sm: 0.75rem;
+$font-size-xs: 0.5rem;
+
+$font-size-h1: 2rem;
+$font-size-h2: 1.75rem;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1.25rem;
+$font-size-h5: 1rem;
+$font-size-h6: 0.875rem;
+
+$headings-font-weight: 600;
+
+$lead-font-size:   1rem;
+$lead-font-weight: 400;
+
+/*
+$input-btn-padding-x: 2rem !default;
+$input-btn-padding-x-sm: 2rem !default;
+$input-btn-padding-x-lg: 2rem !default;
+$custom-file-padding-x: 0.75rem !default;
+*/
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 800px,
+  xl: 800px
+);
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+
