@@ -1,15 +1,80 @@
-$border-radius: 0;
-$border-radius-lg: 0;
-$border-radius-sm: 0;
+@import "node_modules/bootstrap/scss/_functions";
+
+//
+// Color system
+//
+
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:  #000 !default;
+
+$grays: (
+  100: $gray-100,
+  200: $gray-200,
+  300: $gray-300,
+  400: $gray-400,
+  500: $gray-500,
+  600: $gray-600,
+  700: $gray-700,
+  800: $gray-800,
+  900: $gray-900
+) !default;
+
+$blue:   #0190cd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: $gray-600,
+  gray-dark: $gray-800
+) !default;
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-100,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800
+) !default;
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval: 8% !default;
 
 
-$blue:   #009fd9;
-
-$spacer: 0.875rem;
+$spacer: 0.9rem;
 
 $font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 
-$font-size-base: 0.875rem; // Approximately 14px
+$font-size-base: 0.9rem;
 $font-size-lg: 1rem;
 $font-size-sm: 0.75rem;
 $font-size-xs: 0.5rem;
@@ -19,27 +84,109 @@ $font-size-h2: 1.75rem;
 $font-size-h3: 1.5rem;
 $font-size-h4: 1.25rem;
 $font-size-h5: 1rem;
-$font-size-h6: 0.875rem;
+$font-size-h6: 0.9rem;
 
 $headings-font-weight: 600;
 
 $lead-font-size:   1rem;
 $lead-font-weight: 400;
 
-/*
-$input-btn-padding-x: 2rem !default;
-$input-btn-padding-x-sm: 2rem !default;
-$input-btn-padding-x-lg: 2rem !default;
-$custom-file-padding-x: 0.75rem !default;
-*/
+$btn-box-shadow: 0 2px 2px rgba($black,.25) !default;
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 800px,
-  xl: 800px
-);
+$enable-rounded: false !default;
+$enable-gradients: true !default;
+$enable-shadows: true !default;
 
-@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 
+/**
+ * Override button-variant to change border color, and size, and remove active border state
+ */
 
+@mixin button-variant($background, $border, $active-background: darken($background, 7.5%), $active-border: darken($border, 30%)) {
+  @include color-yiq($background);
+  background-color: $background;
+  //background-color: #f00;
+  border-color: $border;
+  @include box-shadow($btn-box-shadow);
+
+  &:hover {
+    @include color-yiq($background);
+    background-color: $active-background;
+    border-color: $active-border;
+  }
+
+  &:focus,
+  &.focus {
+    // Avoid using mixin so we can pass custom focus shadow properly
+    @if $enable-shadows {
+      box-shadow: $btn-box-shadow, 0 0 0 3px rgba(darken($background, 20%), .5);
+    } @else {
+      box-shadow: 0 0 0 3px rgba(darken($background, 20%), .5);
+    }
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    background-color: $background;
+    border-color: $background;
+  }
+
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    background-color: $active-background;
+    background-image: none; // Remove the gradient for the pressed/active state
+    border-color: $active-border;
+    @include box-shadow($btn-active-box-shadow);
+  }
+}
+
+@import "node_modules/bootstrap/scss/print";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/tables";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/dropdown";
+@import "node_modules/bootstrap/scss/button-group";
+@import "node_modules/bootstrap/scss/input-group";
+@import "node_modules/bootstrap/scss/custom-forms";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/breadcrumb";
+@import "node_modules/bootstrap/scss/pagination";
+@import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/jumbotron";
+@import "node_modules/bootstrap/scss/alert";
+@import "node_modules/bootstrap/scss/progress";
+@import "node_modules/bootstrap/scss/media";
+@import "node_modules/bootstrap/scss/list-group";
+@import "node_modules/bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/tooltip";
+@import "node_modules/bootstrap/scss/popover";
+@import "node_modules/bootstrap/scss/carousel";
+@import "node_modules/bootstrap/scss/utilities";
+
+/**
+ * Button override, add a slight bottom border unless active
+ */
+.btn {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 1px;
+  &:active,
+  &.active,
+  &:disabled {
+    border-bottom-width: 0;
+  }
+}
