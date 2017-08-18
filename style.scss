@@ -4,6 +4,10 @@
 // Color system
 //
 
+$add-primary: #0190cd;
+$add-header-dark: #163fba;
+$add-primary-font: darken(theme-color(primary), 10%);
+
 $white:  #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -28,7 +32,7 @@ $grays: (
   900: $gray-900
 ) !default;
 
-$blue:   #0190cd !default;
+$blue:   $add-primary !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -56,7 +60,7 @@ $colors: (
 ) !default;
 
 $theme-colors: (
-  primary: $blue,
+  primary: $add-primary,
   secondary: $gray-100,
   success: $green,
   info: $cyan,
@@ -79,12 +83,13 @@ $font-size-lg: 1rem;
 $font-size-sm: 0.75rem;
 $font-size-xs: 0.5rem;
 
-$font-size-h1: 2rem;
-$font-size-h2: 1.75rem;
-$font-size-h3: 1.5rem;
-$font-size-h4: 1.25rem;
-$font-size-h5: 1rem;
-$font-size-h6: 0.9rem;
+$h1-font-size: 2.0rem !default;
+$h2-font-size: 1.5rem !default;
+$h3-font-size: 1.4rem !default;
+$h4-font-size: 1.3rem !default;
+$h5-font-size: 1.25rem !default;
+$h6-font-size: 1rem !default;
+
 
 $headings-font-weight: 600;
 
@@ -189,4 +194,9 @@ $enable-shadows: true !default;
   &:disabled {
     border-bottom-width: 0;
   }
+}
+
+h2, .h2 {
+  font-weight: $font-weight-light;
+  color: darken(theme-color(primary), 10%); 
 }
