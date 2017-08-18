@@ -5,7 +5,7 @@
 //
 
 $add-primary: #0190cd;
-$add-header-dark: #163fba;
+$add-header-dark: #144d9e;
 $add-primary-font: darken(theme-color(primary), 10%);
 
 $white:  #fff !default;
@@ -196,6 +196,9 @@ $enable-shadows: true !default;
   }
 }
 
+/*
+ * Transform the H2 into a thin, and blue header
+ */
 h2, .h2 {
   font-weight: $font-weight-light;
   color: darken(theme-color(primary), 10%); 
