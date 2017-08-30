@@ -1,19 +1,28 @@
 <html>
 
 <head>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-    crossorigin="anonymous">
-  <link href="../dist/add-style.css" rel="stylesheet">
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="css/add-style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <script>
-    $(function () {
+    function rgb2hex(rgb) {
+      rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+      return (rgb && rgb.length === 4) ? "#" +
+        ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) +
+        ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) +
+        ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2) : '';
+    }
 
+    $(function () {
       $(".eyeclosed").on("click", function (e) {
         var imageContainer = $(this).parent().find('img');
         imageContainer.toggle();
         $(this).toggleClass("eyeopen");
+       
+       var color = $(this).parent().find('div');
+        console.log(rgb2hex(color[0].style.backgroundColor));
+        
       })
 
     })
@@ -78,7 +87,6 @@
       height: 145px;
       border: 1px solid #dedede;
       text-align: center;
-      background: black;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -130,7 +138,7 @@
 
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #000000;">
-        <img src="img/000000.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$black</span> #000000
         </p>
@@ -151,7 +159,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #A8E5FF;">
-        <img src="img/a8e5ff.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #A8E5FF
         </p>
@@ -161,7 +169,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #76D6FF;">
-        <img src="img/76d6ff.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #76D6FF
         </p>
@@ -171,7 +179,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #27B1EC;">
-        <img src="img/27b1ec.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #27B1EC
         </p>
@@ -181,7 +189,7 @@
 
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #0190cd;">
-        <img src="img/0190cd.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$add-primary</span> #0190cd
         </p>
@@ -191,7 +199,7 @@
 
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #016895;">
-        <img src="img/016895.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #016895
         </p>
@@ -201,7 +209,7 @@
 
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #01364d;">
-        <img src="img/01364d.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #01364d
         </p>
@@ -211,7 +219,7 @@
 
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #00121a;">
-        <img src="img/00121a.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #00121a
         </p>
@@ -223,7 +231,7 @@
 
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #000000;">
-        <img src="img/000000.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$black</span> #000000
         </p>
@@ -233,7 +241,7 @@
 
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #333333;">
-        <img src="img/333333.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #333333
         </p>
@@ -243,7 +251,7 @@
 
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #6b6a6a;">
-        <img src="img/6b6a6a.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #6b6a6a
         </p>
@@ -253,7 +261,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #999898;">
-        <img src="img/999898.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #999898
         </p>
@@ -263,7 +271,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #c5c3c3;">
-        <img src="img/c5c3c3.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #c5c3c3
         </p>
@@ -273,7 +281,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #f4f2f2;">
-        <img src="img/f4f2f2.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #f4f2f2
         </p>
@@ -285,7 +293,7 @@
 
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #0190cd;">
-        <img src="img/0190cd.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$add-primary</span> #0190cd
         </p>
@@ -295,7 +303,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #27b1ec;">
-        <img src="img/27b1ec.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #27b1ec
         </p>
@@ -305,7 +313,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #3ca200;">
-        <img src="img/3ca200.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #3ca200
         </p>
@@ -315,7 +323,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #fcc800;">
-        <img src="img/fcc800.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #fcc800
         </p>
@@ -325,7 +333,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #ff7400;">
-        <img src="img/ff7400.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #ff7400
         </p>
@@ -335,7 +343,7 @@
 
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #ba0000;">
-        <img src="img/ba0000.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #ba0000
         </p>
@@ -345,7 +353,7 @@
 
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #333333;">
-        <img src="img/333333.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #333333
         </p>
@@ -355,7 +363,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #c5c3c3;">
-        <img src="img/c5c3c3.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #c5c3c3
         </p>
@@ -367,7 +375,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #c6ffa4;">
-        <img src="img/c6ffa4.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #c6ffa4
         </p>
@@ -377,7 +385,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #a8e5ff;">
-        <img src="img/a8e5ff.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #a8e5ff
         </p>
@@ -387,7 +395,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #ffeca4;">
-        <img src="img/ffeca4.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #ffeca4
         </p>
@@ -397,7 +405,7 @@
 
     <div class="swatchbox">
       <div class="swatch" style="background-color: #ffa4a4;">
-        <img src="img/ffa4a4.png" alt="" class="hidden">
+        <img src="img/base-wcag20-template.png" alt="" class="hidden">
         <p>
           <span class="swatchTitle">$color</span> #ffa4a4
         </p>
