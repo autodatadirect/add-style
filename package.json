@@ -7,7 +7,6 @@
   "license": "MIT",
   "devDependencies": {
     "bootstrap": "^4.0.0-beta",
-    "jquery": "^3.2.1",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0"
   },
