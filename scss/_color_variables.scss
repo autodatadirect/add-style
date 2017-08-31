@@ -5,14 +5,14 @@ $add-primary-font: darken($add-primary, 10%);
 
 $white:  #fff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-200: #f4f2f2 !default;
+$gray-300: #c5c3c3 !default;
+$gray-400: #999898 !default;
+$gray-500: #6b6a6a !default;
+$gray-600: #333333 !default;
+$gray-700: #000000 !default;
+// $gray-800: #343a40 !default;
+// $gray-900: #212529 !default;
 $black:  #000 !default;
 
 $grays: (
@@ -23,20 +23,20 @@ $grays: (
   500: $gray-500,
   600: $gray-600,
   700: $gray-700,
-  800: $gray-800,
-  900: $gray-900
+  // 800: $gray-800,
+  // 900: $gray-900
 ) !default;
 
 $blue:   $add-primary !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #ba0000 !default;
 $orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
+$yellow:  #fcc800 !default;
+$green:   #3ca200 !default;
 $teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$cyan:    #27b1ec !default;
 
 $colors: (
   blue: $blue,
@@ -51,18 +51,18 @@ $colors: (
   cyan: $cyan,
   white: $white,
   gray: $gray-600,
-  gray-dark: $gray-800
+  gray-dark: $gray-700
 ) !default;
 
 $theme-colors: (
   primary: $add-primary,
-  secondary: $gray-100,
+  secondary: $gray-300,
   success: $green,
   info: $cyan,
   warning: $yellow,
   danger: $red,
-  light: $gray-100,
-  dark: $gray-800
+  light: $gray-200,
+  dark: $gray-700
 ) !default;
 
 // Set a specific jump point for requesting color jumps

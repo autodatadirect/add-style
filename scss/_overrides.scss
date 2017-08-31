@@ -14,9 +14,14 @@
 }
 
 /*
- * Transform the H2 into a thin, and blue header
+ * Transform the H2, H3 into a thin, and blue header
  */
 h2, .h2 {
   font-weight: $font-weight-light;
   color: darken(theme-color(primary), 10%);
+}
+
+h3, .h3 {
+  font-weight: $font-weight-light;
+  color: darken(theme-color(primary), 5%);
 }
