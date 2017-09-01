@@ -16,10 +16,6 @@
       margin: 20px 0;
     }
 
-    img {
-      max-width: 100%;
-    }
-
     .swatchbox {
       display: inline-block;
       background-color: #f5f5f5;
@@ -50,7 +46,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      /*height: 100%;*/
       overflow: hidden;
     }
 
@@ -81,7 +76,7 @@
     <h3>Primary Colors</h3>
 
     <div class="swatchbox light">
-      <div class="swatch" style="background-color: #0190cd;">
+      <div class="swatch add-primary">
         <p>
           <span class="swatchTitle">$add-primary</span> #0190cd
         </p>
@@ -159,7 +154,7 @@
         </p>
       </div>
     </div>
-    <!-- Removed to dark
+    <!-- Removed, too dark
     <div class="swatchbox light">
       <div class="swatch" style="background-color: #00121a;">
         <p>
@@ -338,6 +333,59 @@
     <div class="alert alert-danger" role="alert">
       <strong>Oh snap!</strong> Change a few things up and try submitting again.
     </div>
+
+    <form style="width:800px;">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="validationServer03">City</label>
+        <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+
+      <h2>Form Section Header (H2)</h2>
+
+      <div class="form-group">
+        <label>Valid Field</label>
+        <input type="text" class="form-control is-valid" placeholder="Some valid data here" required>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleSelect1">Example select</label>
+        <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleTextarea">Example textarea</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </div>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+
+      <button type="submit" class="btn btn-secondary">Secondary Button</button>
+      <a href="#" role="button" class="btn btn-secondary">Link Button</a>
+      <button type="submit" class="btn btn-primary">Submit Button</button>
+      <button type="submit" class="btn btn-primary disabled" disabled>Disabled Button</button>
+    </form>
+
 
   </div>
 </body>
