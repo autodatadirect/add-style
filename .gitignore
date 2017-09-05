@@ -1,4 +1,3 @@
 dist/*
 node_modules
-*.psd
-example/css/*
+src/css/*
