@@ -1,62 +1,18 @@
-{
-  "menu": [
+[
     {
-      "name": "Croatia",
-      "link": "0.html",
-      "sub": "null"
+      "name": "Color Swatches",
+      "link": "colors.html"
     },
     {
-      "name": "England",
-      "link": "1",
-      "sub": [
-        {
-          "name": "Arsenal",
-          "link": "0-0",
-          "sub": "null"
-        },
-        {
-          "name": "Liverpool",
-          "link": "0-1",
-          "sub": "null"
-        },
-        {
-          "name": "Manchester United",
-          "link": "0-2",
-          "sub": "null"
-        }
-      ]
+      "name": "Menu 2",
+      "link": "two.html"
     },
     {
-      "name": "Spain",
-      "link": "2",
-      "sub": [
-        {
-          "name": "Barcelona",
-          "link": "2-0",
-          "sub": "null"
-        },
-        {
-          "name": "Real Madrid",
-          "link": "2-1",
-          "sub": "null"
-        }
-      ]
+      "name": "Menu 3",
+      "link": "3.html"
     },
     {
-      "name": "Germany",
-      "link": "3",
-      "sub": [
-        {
-          "name": "Bayern Munich",
-          "link": "3-1",
-          "sub": "null"
-        },
-        {
-          "name": "Borrusia Dortmund",
-          "link": "3-2",
-          "sub": "null"
-        }
-      ]
+      "name": "Menu 4",
+      "link": "4.html"
     }
   ]
-}

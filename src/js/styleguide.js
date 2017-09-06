@@ -1,8 +1,14 @@
 $(function () {
 
-  // $.getJSON('/js/menu.json', function (data) {
-
-  // });
+  $.getJSON('/js/menu.json', function (data) {
+    var styleguideMenu = '';
+    $.each(data, function (key, value) {
+      styleguideMenu += '<li>';
+      styleguideMenu += '<a href="' + value.link + '">' + value.name + '</a>';
+      styleguideMenu += '</li>';
+    });
+    $('#menu').append(styleguideMenu);
+  });
 
   // Animation Engine
   $('.guide-title').html(function (i, html) {
