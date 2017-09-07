@@ -1,9 +1,13 @@
-@import "color_variables";
-@import "variables";
-@import "node_modules/bootstrap/scss/_functions";
+/*!
+ * ADD Overrides of Bootstrap v4.0.0-beta
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
-@import "button_variant";
 @import "node_modules/bootstrap/scss/print";
 @import "node_modules/bootstrap/scss/reboot";
 @import "node_modules/bootstrap/scss/type";
@@ -35,4 +39,3 @@
 @import "node_modules/bootstrap/scss/popover";
 @import "node_modules/bootstrap/scss/carousel";
 @import "node_modules/bootstrap/scss/utilities";
-@import "overrides";

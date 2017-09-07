@@ -1,22 +1,10 @@
-/*!
- * ADD Overrides of Bootstrap v4.0.0-beta
- * Copyright 2011-2017 The Bootstrap Authors
- * Copyright 2011-2017 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
- 
- @import "node_modules/bootstrap/scss/functions";
- // Site overrides
- @import "color_variables";
- @import "variables";
- 
- // Core variables and mixins
- @import "node_modules/bootstrap/scss/variables";
- @import "node_modules/bootstrap/scss/mixins";
- @import "button_variant";
- // Reset dependencies
- @import "node_modules/bootstrap/scss/print";
-// Core CSS
+@import "color_variables";
+@import "variables";
+@import "node_modules/bootstrap/scss/_functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "button_variant";
+@import "node_modules/bootstrap/scss/print";
 @import "node_modules/bootstrap/scss/reboot";
 @import "node_modules/bootstrap/scss/type";
 @import "node_modules/bootstrap/scss/images";
@@ -25,7 +13,6 @@
 @import "node_modules/bootstrap/scss/tables";
 @import "node_modules/bootstrap/scss/forms";
 @import "node_modules/bootstrap/scss/buttons";
-// Components
 @import "node_modules/bootstrap/scss/transitions";
 @import "node_modules/bootstrap/scss/dropdown";
 @import "node_modules/bootstrap/scss/button-group";
@@ -43,14 +30,10 @@
 @import "node_modules/bootstrap/scss/media";
 @import "node_modules/bootstrap/scss/list-group";
 @import "node_modules/bootstrap/scss/close";
-// Javascript required components
 @import "node_modules/bootstrap/scss/modal";
 @import "node_modules/bootstrap/scss/tooltip";
 @import "node_modules/bootstrap/scss/popover";
 @import "node_modules/bootstrap/scss/carousel";
-// Utility classes
 @import "node_modules/bootstrap/scss/utilities";
-// Overrides
 @import "overrides";
-// Custom dev ONLY styles (These styles never appear in prod)
 @import "dev_styles";
