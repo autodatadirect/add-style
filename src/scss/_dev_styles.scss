@@ -107,9 +107,21 @@ ul#menu {
 // Colors Page Styles
 
 .uiguideTitle {
-  border-bottom: 1px solid #0190cd;
+  border-bottom: 2px solid #016c9a;
   margin-bottom: 30px;
   font-weight: 400;
+  line-height: 2.5rem;
+}
+
+h1.underline,
+h2.underline,
+h3.underline,
+h4.underline,
+h5.underline,
+h6.underline {
+  border-bottom: 1px solid #017eb4 !important;
+  margin-bottom: 30px;
+  line-height: 2.5rem;
 }
 
 h3 {
