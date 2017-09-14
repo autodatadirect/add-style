@@ -1,0 +1,12 @@
+// Underline Headers
+
+h1.underline,
+h2.underline,
+h3.underline,
+h4.underline,
+h5.underline,
+h6.underline {
+  border-bottom: 1px solid darken(theme-color(primary), 10%);
+  margin-bottom: 30px;
+  line-height: 2.5rem;
+}

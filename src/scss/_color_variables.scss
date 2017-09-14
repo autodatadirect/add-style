@@ -1,19 +1,26 @@
-
-$add-primary: #0190cd;
-$add-header-dark: #144d9e;
-$add-primary-font: darken($add-primary, 10%);
+//
+// ADD Color system
+//
 
 $white:  #fff !default;
+$black:  #000 !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #f4f2f2 !default;
 $gray-300: #c5c3c3 !default;
 $gray-400: #999898 !default;
 $gray-500: #6b6a6a !default;
 $gray-600: #333333 !default;
-$gray-700: #000000 !default;
-// $gray-800: #343a40 !default;
-// $gray-900: #212529 !default;
-$black:  #000 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$blue-100: #a8e5ff !default;
+$blue-200: #76d6ff !default;
+$blue-300: #27b1ec !default;
+$blue-400: #0190cd !default;
+$blue-500: #016895 !default;
+$blue-600: #01364d !default;
+$blue-700: #00121a !default;
 
 $grays: (
   100: $gray-100,
@@ -23,47 +30,65 @@ $grays: (
   500: $gray-500,
   600: $gray-600,
   700: $gray-700,
-  // 800: $gray-800,
-  // 900: $gray-900
+  800: $gray-800,
+  900: $gray-900
 ) !default;
 
-$blue:   $add-primary !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #ba0000 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #fcc800 !default;
-$green:   #3ca200 !default;
-$teal:    #20c997 !default;
-$cyan:    #27b1ec !default;
+$blues: (
+  100: $blue-100,
+  200: $blue-200,
+  300: $blue-300,
+  400: $blue-400,
+  500: $blue-500,
+  600: $blue-600,
+  700: $blue-700
+) !default;
+
+$add-primary:   #0190cd !default;
+$light-blue:    #a8e5ff !default;
+$sky-blue:      #76d6ff !default;
+$bright-blue:   #27b1ec !default;
+$country-blue:  #016895 !default;
+$dark-blue:     #01364d !default;
+$midnight-blue: #00121a !default;
+$green:         #28a745 !default;
+$yellow:        #fcc800 !default;
+$orange:        #ff7400 !default;
+$red:           #ba0000 !default;
 
 $colors: (
-  blue: $blue,
-  indigo: $indigo,
-  purple: $purple,
-  pink: $pink,
+  blue: $add-primary,
   red: $red,
   orange: $orange,
   yellow: $yellow,
   green: $green,
-  teal: $teal,
-  cyan: $cyan,
   white: $white,
-  gray: $gray-600,
-  gray-dark: $gray-700
+  gray: $gray-400,
+  gray-dark: $gray-600
 ) !default;
 
 $theme-colors: (
   primary: $add-primary,
-  secondary: $gray-300,
+  secondary: $gray-500,
   success: $green,
-  info: $cyan,
+  info: $bright-blue,
   warning: $yellow,
   danger: $red,
-  light: $gray-200,
-  dark: $gray-700
+  light: $gray-100,
+  dark: $gray-600
 ) !default;
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval: 8% !default;
+
+// Settings for the `<body>` element.
+
+$body-bg:       $white !default;
+$body-color:    $gray-600 !default;
+
+// Links Style anchor elements
+
+$link-color:            theme-color("primary") !default;
+$link-decoration:       none !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;

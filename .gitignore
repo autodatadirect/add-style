@@ -2,3 +2,4 @@ dist/*
 node_modules
 src/css/*
 .DS_Store
+*.log

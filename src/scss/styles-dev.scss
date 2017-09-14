@@ -50,7 +50,8 @@
 @import "node_modules/bootstrap/scss/carousel";
 // Utility classes
 @import "node_modules/bootstrap/scss/utilities";
-// Overrides
+// Overrides and Custom Styles
 @import "overrides";
+@import "custom_styles";
 // Custom dev ONLY styles (These styles never appear in prod)
 @import "dev_styles";
