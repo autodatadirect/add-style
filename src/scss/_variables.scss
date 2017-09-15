@@ -8,7 +8,7 @@
 
 // Table of Contents
 //
-// Color system*
+// Color system
 // Options
 // Spacing
 // Body
@@ -283,7 +283,7 @@ $lead-font-weight: 300 !default;
 
 $small-font-size: 80% !default;
 
-$text-muted: $gray-600 !default;
+// $text-muted: $gray-600 !default;
 
 $blockquote-small-color:  $gray-600 !default;
 $blockquote-font-size:    ($font-size-base * 1.25) !default;
@@ -840,11 +840,11 @@ $close-text-shadow:           0 1px 0 $white !default;
 $code-font-size:              90% !default;
 $code-padding-y:              .2rem !default;
 $code-padding-x:              .4rem !default;
-$code-color:                  #bd4147 !default;
-$code-bg:                     $gray-100 !default;
+// $code-color:                  #bd4147 !default;
+// $code-bg:                     $gray-100 !default;
 
-$kbd-color:                   $white !default;
-$kbd-bg:                      $gray-900 !default;
+// $kbd-color:                   $white !default;
+// $kbd-bg:                      $gray-900 !default;
 
-$pre-color:                   $gray-900 !default;
+// $pre-color:                   $gray-900 !default;
 $pre-scrollable-max-height:   340px !default;

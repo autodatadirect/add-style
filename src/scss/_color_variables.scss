@@ -6,13 +6,13 @@ $white:  #fff !default;
 $black:  #000 !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #f4f2f2 !default;
-$gray-300: #c5c3c3 !default;
-$gray-400: #999898 !default;
-$gray-500: #6b6a6a !default;
-$gray-600: #333333 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-300: #e5e3e3 !default;
+$gray-400: #c5c3c3 !default;
+$gray-500: #989898 !default;
+$gray-600: #6a6a6a !default;
+$gray-700: #4f4f4f !default;
+$gray-800: #333333 !default;
+$gray-900: #191919 !default;
 
 $blue-100: #a8e5ff !default;
 $blue-200: #76d6ff !default;
@@ -41,7 +41,8 @@ $blues: (
   400: $blue-400,
   500: $blue-500,
   600: $blue-600,
-  700: $blue-700
+  700: $blue-700,
+  primary: $blue-400
 ) !default;
 
 $add-primary:   #0190cd !default;
@@ -55,6 +56,7 @@ $green:         #28a745 !default;
 $yellow:        #fcc800 !default;
 $orange:        #ff7400 !default;
 $red:           #ba0000 !default;
+$text-muted:    $gray-400 !default;
 
 $colors: (
   blue: $add-primary,
@@ -63,7 +65,7 @@ $colors: (
   yellow: $yellow,
   green: $green,
   white: $white,
-  gray: $gray-400,
+  gray: $gray-300,
   gray-dark: $gray-600
 ) !default;
 
@@ -73,9 +75,10 @@ $theme-colors: (
   success: $green,
   info: $bright-blue,
   warning: $yellow,
+  caution: $orange,
   danger: $red,
-  light: $gray-100,
-  dark: $gray-600
+  light: $gray-300,
+  dark: $gray-800
 ) !default;
 
 // Set a specific jump point for requesting color jumps
@@ -84,7 +87,7 @@ $theme-color-interval: 8% !default;
 // Settings for the `<body>` element.
 
 $body-bg:       $white !default;
-$body-color:    $gray-600 !default;
+$body-color:    $gray-900 !default;
 
 // Links Style anchor elements
 
@@ -92,3 +95,33 @@ $link-color:            theme-color("primary") !default;
 $link-decoration:       none !default;
 $link-hover-color:      darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
+
+// Code color for <code> block
+
+$code-color:                  $red !default;
+$code-bg:                     $gray-300 !default;
+
+// Keyboard color for <kbd> block
+$kbd-color:                   $white !default;
+$kbd-bg:                      $gray-900 !default;
+
+$pre-color:                   $gray-900 !default;
+
+// Generate classes for colors gray and blue
+
+// Blue classes
+@each $color, $value in $blues {
+  @include add-color-gen('.blue-#{$color}', $value);
+}
+@each $color, $value in $blues {
+  @include add-bg-gen('.bg-blue-#{$color}', $value);
+}
+
+// Gray classes
+
+@each $color, $value in $grays {
+  @include add-color-gen('.gray-#{$color}', $value);
+}
+@each $color, $value in $grays {
+  @include add-bg-gen('.bg-gray-#{$color}', $value);
+}

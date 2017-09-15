@@ -6,6 +6,7 @@
  */
  
  @import "node_modules/bootstrap/scss/functions";
+ @import "mixins/color-generator";
  // Site overrides
  @import "color_variables";
  @import "variables";

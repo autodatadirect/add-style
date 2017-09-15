@@ -1,0 +1,13 @@
+// Contextual backgrounds
+
+@mixin add-bg-gen($parent, $color) {
+  #{$parent} {
+    background-color: $color !important;
+  }
+}
+
+@mixin add-color-gen($parent, $color) {
+  #{$parent} {
+    color: $color !important;
+  }
+}
