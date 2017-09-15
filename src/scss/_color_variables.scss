@@ -14,10 +14,23 @@ $gray-700: #4f4f4f !default;
 $gray-800: #333333 !default;
 $gray-900: #191919 !default;
 
+$add-primary:   #0190cd !default;
+$light-blue:    #a8e5ff !default;
+$sky-blue:      #76d6ff !default;
+$bright-blue:   #27b1ec !default;
+$country-blue:  #016895 !default;
+$dark-blue:     #01364d !default;
+$midnight-blue: #00121a !default;
+$green:         #28a745 !default;
+$yellow:        #fcc800 !default;
+$orange:        #ff7400 !default;
+$red:           #ba0000 !default;
+$text-muted:    $gray-400 !default;
+
 $blue-100: #a8e5ff !default;
 $blue-200: #76d6ff !default;
 $blue-300: #27b1ec !default;
-$blue-400: #0190cd !default;
+$blue-400: $add-primary !default;
 $blue-500: #016895 !default;
 $blue-600: #01364d !default;
 $blue-700: #00121a !default;
@@ -45,18 +58,6 @@ $blues: (
   primary: $blue-400
 ) !default;
 
-$add-primary:   #0190cd !default;
-$light-blue:    #a8e5ff !default;
-$sky-blue:      #76d6ff !default;
-$bright-blue:   #27b1ec !default;
-$country-blue:  #016895 !default;
-$dark-blue:     #01364d !default;
-$midnight-blue: #00121a !default;
-$green:         #28a745 !default;
-$yellow:        #fcc800 !default;
-$orange:        #ff7400 !default;
-$red:           #ba0000 !default;
-$text-muted:    $gray-400 !default;
 
 $colors: (
   blue: $add-primary,
