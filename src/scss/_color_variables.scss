@@ -17,7 +17,7 @@ $gray-900: #191919 !default;
 $add-primary:   #0190cd !default;
 $light-blue:    #a8e5ff !default;
 $sky-blue:      #76d6ff !default;
-$bright-blue:   #27b1ec !default;
+$cyan:          #27b1ec !default;
 $country-blue:  #016895 !default;
 $dark-blue:     #01364d !default;
 $midnight-blue: #00121a !default;
@@ -29,7 +29,7 @@ $text-muted:    $gray-400 !default;
 
 $blue-100: #a8e5ff !default;
 $blue-200: #76d6ff !default;
-$blue-300: #27b1ec !default;
+$blue-300: $cyan !default;
 $blue-400: $add-primary !default;
 $blue-500: #016895 !default;
 $blue-600: #01364d !default;
@@ -74,7 +74,7 @@ $theme-colors: (
   primary: $add-primary,
   secondary: $gray-500,
   success: $green,
-  info: $bright-blue,
+  info: $cyan,
   warning: $yellow,
   caution: $orange,
   danger: $red,
