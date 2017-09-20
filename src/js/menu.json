@@ -4,11 +4,11 @@
       "link": "colors.html"
     },
     {
-      "name": "Form Controls",
-      "link": "controls.html"
-    },
-    {
       "name": "Fonts and Headers",
       "link": "fonts.html"
+    },
+    {
+      "name": "Form Controls",
+      "link": "controls.html"
     }
   ]

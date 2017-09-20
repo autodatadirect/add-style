@@ -9,10 +9,10 @@
  @import "mixins/color-generator";
  // Site overrides
  @import "color_variables";
- @import "variables";
+ @import "font_variables";
  
  // Core variables and mixins
- @import "node_modules/bootstrap/scss/variables";
+ @import "variables";
  @import "node_modules/bootstrap/scss/mixins";
  @import "button_variant";
  // Reset dependencies

@@ -1,0 +1,89 @@
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+) !default;
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom: 1rem;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:  "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+$font-size-base: 0.875rem !default;
+$font-size-lg:   1rem !default;
+$font-size-sm:   0.571rem !default;
+$font-size-xs:   0.429rem;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+$h1-font-size: 1.786rem !default;
+$h2-font-size: 1.714rem !default;
+$h3-font-size: 1.571rem !default;
+$h4-font-size: 1.429rem !default;
+$h5-font-size: 1.286rem !default;
+$h6-font-size: 1.143rem !default;
+
+$headings-margin-bottom: ($spacer / 2) !default;
+$headings-font-family:   inherit !default;
+$headings-font-weight:   300 !default;
+$headings-line-height:   1.5 !default;
+$headings-color:         inherit !default;
+
+$display1-size: 6rem !default;
+$display2-size: 5.5rem !default;
+$display3-size: 4.5rem !default;
+$display4-size: 3.5rem !default;
+
+$display1-weight:     300 !default;
+$display2-weight:     300 !default;
+$display3-weight:     300 !default;
+$display4-weight:     300 !default;
+$display-line-height: $headings-line-height !default;
+
+$lead-font-size:   1.25rem !default;
+$lead-font-weight: 300 !default;
+
+$small-font-size: 80% !default;
+
+$blockquote-small-color:  $gray-600 !default;
+$blockquote-font-size:    ($font-size-base * 1.25) !default;
+
+$hr-border-color: rgba($black,.1) !default;
+
+// Left in variables file
+// $hr-border-width: $border-width !default;
+
+$mark-padding: .2em !default;
+
+$dt-font-weight: $font-weight-bold !default;
+
+$kbd-box-shadow:  inset 0 -.1rem 0 rgba($black,.25) !default;
+$nested-kbd-font-weight: $font-weight-bold !default;
+
+$list-inline-padding: 5px !default;
+
+$mark-bg: #fcf8e3 !default;

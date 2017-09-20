@@ -12,6 +12,28 @@ h4.underline,
 h5.underline,
 h6.underline {
   border-bottom: 1px solid darken(theme-color(primary), 10%);
-  margin-bottom: 30px;
-  line-height: 2.5rem;
+  margin-bottom: $headings-margin-bottom;
+  line-height: $headings-line-height;
+}
+
+h1.underline-black,
+h2.underline-black,
+h3.underline-black,
+h4.underline-black,
+h5.underline-black,
+h6.underline-black {
+  border-bottom: 1px solid $black;
+  margin-bottom: $headings-margin-bottom;
+  line-height: $headings-line-height;
+}
+
+// Text Highlight
+
+.text-highlight {
+  border: 1px solid darken($blue-100, 5%);
+  border-radius: $border-radius;
+  background-color: lighten($blue-100, 5%);
+  display: inline-block;
+  padding: 0px 4px;
+  color: darken($blue-100, 65%);
 }
