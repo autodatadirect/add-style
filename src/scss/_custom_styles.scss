@@ -37,3 +37,34 @@ h6.underline-black {
   padding: 0px 4px;
   color: darken($blue-100, 65%);
 }
+
+/**
+ * Button override, add a slight bottom border unless active
+ */
+ .btn {
+  // border-top-width: 0;
+  // border-right-width: 0;
+  // border-left-width: 0;
+  // border-bottom-width: 1px;
+  // cursor: pointer;
+  // &:active,
+  // &.active,
+  // &:disabled {
+  //   border-bottom-width: 0;
+  // }
+  &:disabled {
+    cursor: not-allowed; 
+  }
+}
+
+// Add Pointer to Buttons and Select elements
+button, select {
+  cursor: pointer;
+}
+
+// Label Overide control
+label {
+  // Allow labels to use `margin` for spacing.
+  display: inline-block;
+  margin-bottom: .125rem;
+}

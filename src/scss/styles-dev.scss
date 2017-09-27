@@ -14,7 +14,7 @@
  // Core variables and mixins
  @import "variables";
  @import "node_modules/bootstrap/scss/mixins";
- @import "button_variant";
+//  @import "button_variant";
  // Reset dependencies
  @import "node_modules/bootstrap/scss/print";
 // Core CSS
@@ -51,8 +51,7 @@
 @import "node_modules/bootstrap/scss/carousel";
 // Utility classes
 @import "node_modules/bootstrap/scss/utilities";
-// Overrides and Custom Styles
-@import "overrides";
+// Overrides / Custom Styles
 @import "custom_styles";
-// Custom dev ONLY styles (These styles never appear in prod)
-@import "dev_styles";
+// Custom dev Style Guide ONLY styles (These should NEVER appear in prod)
+@import "dev_styleguide_styles";

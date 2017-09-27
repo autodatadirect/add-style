@@ -10,7 +10,7 @@ $(function () {
     $('#menu').append(styleguideMenu);
   });
 
-  // Animation Engine
+  // Style Guide Text Animation Engine
   $('.guide-title').html(function (i, html) {
     var chars = $.trim(html).split("");
     return '<span>' + chars.join('</span><span>') + '</span>';
@@ -18,5 +18,3 @@ $(function () {
 
 
 });
-
-//http://jsfiddle.net/9uhc3/5/

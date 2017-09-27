@@ -2,26 +2,27 @@
  * Button override, add a slight bottom border unless active
  */
 .btn {
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-  border-bottom-width: 1px;
-  &:active,
-  &.active,
+  // border-top-width: 0;
+  // border-right-width: 0;
+  // border-left-width: 0;
+  // border-bottom-width: 1px;
+  // cursor: pointer;
+  // &:active,
+  // &.active,
+  // &:disabled {
+  //   border-bottom-width: 0;
+  // }
   &:disabled {
-    border-bottom-width: 0;
+    cursor: not-allowed; 
   }
 }
+button, select {
+  cursor: pointer;
+}
 
-/*
- * Transform the H2, H3 into a thin, and blue header
- */
-// h2, .h2 {
-//   font-weight: $font-weight-light;
-//   color: darken(theme-color(primary), 10%);
-// }
-
-// h3, .h3 {
-//   font-weight: $font-weight-light;
-//   color: darken(theme-color(primary), 5%);
-// }
+// Label Overide control
+label {
+  // Allow labels to use `margin` for spacing.
+  display: inline-block;
+  margin-bottom: .125rem;
+}
