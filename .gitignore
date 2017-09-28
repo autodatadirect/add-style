@@ -1,5 +1,4 @@
-dist/*
-node_modules
-src/css/*
+/node_modules
 .DS_Store
-*.log
+/.idea
+/npm-debug.log

@@ -6,19 +6,17 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "^4.0.0-beta",
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-cli": "^1.4.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "bootstrap": "^4.0.0-beta"
   },
   "peerDependencies": {
     "bootstrap": "^4.0.0-beta"
   },
   "scripts": {
-    "build": "gulp",
-    "build:prod": "gulp prod"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/style.scss dist/add-style.css",
+    "build-docs": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 docs/style.scss docs/style.css",
+    "watch": "nodemon --watch scss --ignore dist/ -e scss -x \"npm run build\""
   }
 }
