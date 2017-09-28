@@ -17,6 +17,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/style.scss dist/add-style.css",
     "build-docs": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 docs/style.scss docs/style.css",
-    "watch": "nodemon --watch scss --ignore dist/ -e scss -x \"npm run build\""
+    "watch": "nodemon --watch scss --watch docs --ignore dist/ -e scss -x \"npm run build\""
   }
 }
