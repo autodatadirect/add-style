@@ -1,0 +1,79 @@
+
+// Blue classes
+// TODO: move these into a _colors.scsss file
+@each $color, $value in $blues {
+  @include add-color-gen('.blue-#{$color}', $value);
+}
+@each $color, $value in $blues {
+  @include add-bg-gen('.bg-blue-#{$color}', $value);
+}
+
+// Gray classes
+
+@each $color, $value in $grays {
+  @include add-color-gen('.gray-#{$color}', $value);
+}
+@each $color, $value in $grays {
+  @include add-bg-gen('.bg-gray-#{$color}', $value);
+}
+
+
+// Underline Headers
+
+h1.underline,
+h2.underline,
+h3.underline,
+h4.underline,
+h5.underline,
+h6.underline {
+  border-bottom: 1px solid darken(theme-color(primary), 10%);
+  margin-bottom: $headings-margin-bottom;
+  line-height: $headings-line-height;
+}
+
+h1.underline-black,
+h2.underline-black,
+h3.underline-black,
+h4.underline-black,
+h5.underline-black,
+h6.underline-black {
+  border-bottom: 1px solid $black;
+  margin-bottom: $headings-margin-bottom;
+  line-height: $headings-line-height;
+}
+
+// Text Highlight
+
+.text-highlight {
+  border: 1px solid darken($blue-100, 5%);
+  border-radius: $border-radius;
+  background-color: lighten($blue-100, 5%);
+  display: inline-block;
+  padding: 0px 4px;
+  color: darken($blue-100, 65%);
+}
+
+/**
+ * Button override, add a slight bottom border unless active
+ */
+ .btn {
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+// Add Pointer to Buttons and Select elements
+button, select {
+  cursor: pointer;
+}
+
+// Label Overide control
+label {
+  // Allow labels to use `margin` for spacing.
+  display: inline-block;
+  margin-bottom: .125rem;
+}
+
+.form-control {
+  padding: $input-padding-y $input-padding-x;
+}

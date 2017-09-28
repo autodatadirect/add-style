@@ -1,27 +1,122 @@
-$spacer: 0.9rem;
+/*
+ * ADD Styles
+ */
 
-$font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+$white:  #fff !default;
+$black:  #000 !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #f4f2f2 !default;
+$gray-300: #e5e3e3 !default;
+$gray-400: #c5c3c3 !default;
+$gray-500: #989898 !default;
+$gray-600: #6a6a6a !default;
+$gray-700: #4f4f4f !default;
+$gray-800: #333333 !default;
+$gray-900: #191919 !default;
 
-$font-size-base: 0.9rem;
-$font-size-lg: 1rem;
-$font-size-sm: 0.75rem;
-$font-size-xs: 0.5rem;
+$add-primary:   #0190cd !default;
+$blue:          $add-primary !default;
+$light-blue:    #d9f4ff !default;
+$baby-blue:     #a8e5ff !default;
+$sky-blue:      #76d6ff !default;
+$cyan:          #27b1ec !default;
+$country-blue:  #016895 !default;
+$dark-blue:     #01364d !default;
+$midnight-blue: #00121a !default;
+$green:         #28a745 !default;
+$yellow:        #fcc800 !default;
+$orange:        #ff7400 !default;
+$red:           #ba0000 !default;
+$text-muted:    $gray-500 !default;
+$indigo:        #6610f2 !default;
+$purple:        #6f42c1 !default;
+$pink:          #e83e8c !default;
+$teal:          #20c997 !default;
 
-$h1-font-size: 2.0rem !default;
-$h2-font-size: 1.5rem !default;
-$h3-font-size: 1.4rem !default;
-$h4-font-size: 1.3rem !default;
-$h5-font-size: 1.25rem !default;
-$h6-font-size: 1rem !default;
+$colors: (
+    blue: $blue,
+    indigo: $indigo,
+    purple: $purple,
+    pink: $pink,
+    red: $red,
+    orange: $orange,
+    yellow: $yellow,
+    green: $green,
+    teal: $teal,
+    cyan: $cyan,
+    white: $white,
+    gray: $gray-300,
+    gray-dark: $gray-600
+) !default;
+
+$blue-100: $light-blue !default;
+$blue-200: $baby-blue !default;
+$blue-300: $sky-blue !default;
+$blue-400: $cyan !default;
+$blue-500: $add-primary !default;
+$blue-600: $country-blue !default;
+$blue-700: $dark-blue !default;
+$blue-800: $midnight-blue !default;
+
+$blues: (
+    100: $blue-100,
+    200: $blue-200,
+    300: $blue-300,
+    400: $blue-400,
+    500: $blue-500,
+    600: $blue-600,
+    700: $blue-700,
+    800: $blue-800,
+    primary: $blue-500
+) !default;
+
+// The only reason this is defined here is for `caution`
+$theme-colors: (
+    primary: $add-primary,
+    secondary: $gray-500,
+    success: $green,
+    info: $cyan,
+    warning: $yellow,
+    caution: $orange,
+    danger: $red,
+    light: $gray-400,
+    dark: $gray-800
+) !default;
+
+$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$font-size-base: 0.87rem !default;
+$font-size-lg:   1rem !default;
+$font-size-sm:   0.571rem !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
 
 
-$headings-font-weight: 600;
+$h1-font-size: 2.143rem !default;
+$h2-font-size: 1.857rem !default;
+$h3-font-size: 1.714rem !default;
+$h4-font-size: 1.429rem !default;
+$h5-font-size: 1.286rem !default;
+$h6-font-size: 1.143rem !default;
 
-$lead-font-size:   1rem;
-$lead-font-weight: 400;
+$headings-font-weight:   300 !default;
+$headings-line-height:   1.5 !default;
 
-$btn-box-shadow: 0 2px 2px rgba($black,.25) !default;
-
-$enable-rounded: false !default;
 $enable-gradients: true !default;
-$enable-shadows: true !default;
+
+$border-radius: 0.214rem !default;
+$border-radius-lg: .25rem !default;
+
+$input-padding-x: 0.5rem !default;
+$input-padding-y: 0.5rem !default;
+
+
+$code-color:  $red !default;
+$code-bg: $gray-300 !default;
+
+
+$input-color: $gray-800 !default;
+
+$input-placeholder-color: $gray-400 !default;
