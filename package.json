@@ -2,7 +2,7 @@
   "name": "add-style",
   "version": "1.0.0",
   "description": "Base Bootstrap file for Auto Data Direct, Inc.",
-  "main": "index.js",
+  "main": "index.html",
   "author": "",
   "license": "MIT",
   "devDependencies": {
@@ -16,6 +16,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/style.scss dist/add-style.css",
+    "build-docs": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 docs/style.scss docs/style.css",
     "watch": "nodemon --watch scss --ignore dist/ -e scss -x \"npm run build\""
   }
 }

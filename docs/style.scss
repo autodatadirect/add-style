@@ -1,0 +1,183 @@
+/*
+  This file contains all the custom styles for the Style Guide.
+  The production file located in the ./dist folder contains the
+  final file without these styles compiled in it.
+*/
+
+@import "../scss/style";
+
+// Logo Image
+.logo {
+  height: 43px;
+  margin: 10px 0;
+}
+
+.guide-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 3px #000000;
+  text-align: right;
+}
+
+/*
+* Animation module with all animation code
+*/
+
+.anim-text-flow {
+/*
+  Animation variables
+*/
+  $animationSteps: 20;
+  $animationDuration: 50;
+  $animationElement: span;
+  $animationElementsCount: 100;
+  $delayBetweenLetters: 0.2;
+/*
+  Elements settings
+*/
+  #{$animationElement} {
+    animation-name: anim-text-flow-keys;
+    animation-duration: #{$animationDuration}s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+/*
+  Keyframe loop
+*/
+  @keyframes anim-text-flow-keys {
+    @for $i from 0 through $animationSteps {
+      #{percentage($i * (1 / $animationSteps))} {
+        color: hsla(random(365), 60, 60, 1);
+      }
+    }
+  }
+/*
+  Element animation delay loop
+*/
+  $totalDelayTime: $animationElementsCount * $delayBetweenLetters;
+  @for $i from 1 through $animationElementsCount {
+    #{$animationElement}:nth-of-type(#{$i}) {
+      animation-delay: #{($i * $delayBetweenLetters) - $totalDelayTime}s;
+    }
+  }
+}
+
+// Menu Styles
+
+ul#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li a {
+  display: block;
+  color: #000;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+#menu li a:hover {
+  background-color: $add-primary;
+  color: white;
+  border-radius: 3px;
+}
+
+.menu {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+}
+
+.column-border {
+  border-right: 1px solid #c5c3c3;
+  border-bottom: 1px solid #c5c3c3;
+}
+
+.page-content {
+  padding-top: 30px;
+}
+.add-primary {
+  background-color: $add-primary;
+}
+
+// Colors Page Styles
+
+.uiguideTitle {
+  border-bottom: 2px solid $add-primary;
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.swatchbox {
+  display: inline-block;
+  background-color: #f5f5f5;
+  border: 1px solid #dedede;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  overflow: visible;
+}
+
+.swatchbox.primary {
+  background-color: #afd4f9
+}
+
+.light {
+  color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+
+.swatch {
+  width: 145px;
+  height: 145px;
+  border: 1px solid #dedede;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*height: 100%;*/
+  overflow: hidden;
+}
+
+.swatch p {
+  margin: 0;
+  padding: 20px;
+  text-transform: lowercase;
+}
+
+.swatchTitle {
+  font-weight: bold;
+  display: block;
+}
+
+/*
+ * Transform the H2, H3 into a thin, and blue header
+ */
+.h2 {
+  font-weight: $font-weight-light;
+  color: darken(theme-color(primary), 10%);
+}
+
+.h3 {
+  font-weight: $font-weight-light;
+  color: darken(theme-color(primary), 5%);
+  margin-top: 20px;
+}
+
+form {
+  width: 100%;
+}
