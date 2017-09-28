@@ -27,7 +27,7 @@ $green:         #28a745 !default;
 $yellow:        #fcc800 !default;
 $orange:        #ff7400 !default;
 $red:           #ba0000 !default;
-$text-muted:    $gray-400 !default;
+$text-muted:    $gray-500 !default;
 $indigo:        #6610f2 !default;
 $purple:        #6f42c1 !default;
 $pink:          #e83e8c !default;
@@ -113,10 +113,10 @@ $input-padding-x: 0.5rem !default;
 $input-padding-y: 0.5rem !default;
 
 
-$code-color:                  $red !default;
-$code-bg:                     $gray-300 !default;
+$code-color:  $red !default;
+$code-bg: $gray-300 !default;
 
 
-$input-color:                    $gray-800 !default;
+$input-color: $gray-800 !default;
 
-$input-placeholder-color:        $gray-400 !default;
+$input-placeholder-color: $gray-400 !default;
