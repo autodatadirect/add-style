@@ -4,7 +4,7 @@
 
 ## Usage
 
-Include the `/dist/style.css` or use a SASS compiler with `/scss/style.scss`
+Include the `/dist/add-style.min.css` or use a SASS compiler with `/scss/style.scss`
 
 
 ## Build
