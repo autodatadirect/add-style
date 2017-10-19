@@ -1,25 +1,7 @@
 
-// Blue classes
-// TODO: move these into a _colors.scsss file
-@each $color, $value in $blues {
-  @include add-color-gen('.blue-#{$color}', $value);
-}
-@each $color, $value in $blues {
-  @include add-bg-gen('.bg-blue-#{$color}', $value);
-}
-
-// Gray classes
-
-@each $color, $value in $grays {
-  @include add-color-gen('.gray-#{$color}', $value);
-}
-@each $color, $value in $grays {
-  @include add-bg-gen('.bg-gray-#{$color}', $value);
-}
-
-
-// Underline Headers
-
+/*
+ * Underline Headers
+ */
 h1.underline,
 h2.underline,
 h3.underline,
@@ -42,8 +24,6 @@ h6.underline-black {
   line-height: $headings-line-height;
 }
 
-// Text Highlight
-
 .text-highlight {
   border: 1px solid darken($blue-100, 5%);
   border-radius: $border-radius;
@@ -53,27 +33,8 @@ h6.underline-black {
   color: darken($blue-100, 65%);
 }
 
-/**
- * Button override, add a slight bottom border unless active
- */
- .btn {
-  &:disabled {
-    cursor: not-allowed;
-  }
-}
-
-// Add Pointer to Buttons and Select elements
-button, select {
+select.form-control {
+  padding-top: $custom-select-padding-y;
+  padding-bottom: $custom-select-padding-y;
   cursor: pointer;
-}
-
-// Label Overide control
-label {
-  // Allow labels to use `margin` for spacing.
-  display: inline-block;
-  margin-bottom: .125rem;
-}
-
-.form-control {
-  padding: $input-padding-y $input-padding-x;
 }

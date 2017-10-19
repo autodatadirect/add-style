@@ -11,3 +11,23 @@
     color: $color !important;
   }
 }
+
+/*
+ * Blue Classes
+ */
+@each $color, $value in $blues {
+  @include add-color-gen('.blue-#{$color}', $value);
+}
+@each $color, $value in $blues {
+  @include add-bg-gen('.bg-blue-#{$color}', $value);
+}
+
+/*
+ * Gray Classes
+ */
+@each $color, $value in $grays {
+  @include add-color-gen('.gray-#{$color}', $value);
+}
+@each $color, $value in $grays {
+  @include add-bg-gen('.bg-gray-#{$color}', $value);
+}

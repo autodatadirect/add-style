@@ -1,7 +1,3 @@
-/*
- * ADD Styles
- */
-
 $white:  #fff !default;
 $black:  #000 !default;
 $gray-100: #f8f9fa !default;
@@ -70,9 +66,8 @@ $blues: (
     primary: $blue-500
 ) !default;
 
-// The only reason this is defined here is for `caution`
 $theme-colors: (
-    primary: $add-primary,
+    primary: $country-blue,
     secondary: $gray-700,
     success: $green,
     info: $cyan,
@@ -85,14 +80,19 @@ $theme-colors: (
 
 $font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
-$font-size-base: 0.87rem !default;
+$font-size-base: 0.875rem !default;
 $font-size-lg:   1rem !default;
 $font-size-sm:   0.571rem !default;
+
+/*
+ * Using OpenSans in select boxes causes some font clipping,
+ * this variable allows the fix to be adjusted
+ */
+$custom-select-padding-y: 0.285rem !default;
 
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 600 !default;
-
 
 $h1-font-size: 2.143rem !default;
 $h2-font-size: 1.857rem !default;
@@ -104,19 +104,19 @@ $h6-font-size: 1.143rem !default;
 $headings-font-weight:   300 !default;
 $headings-line-height:   1.5 !default;
 
-$enable-gradients: true !default;
-
-$border-radius: 0.214rem !default;
-$border-radius-lg: .25rem !default;
-
-$input-padding-x: 0.5rem !default;
-$input-padding-y: 0.5rem !default;
-
-
-$code-color:  $red !default;
+$code-color: $red !default;
 $code-bg: $gray-300 !default;
 
-
 $input-color: $gray-800 !default;
+$input-placeholder-color: $gray-500 !default;
+$input-focus-box-shadow: 0 0 8px rgba($blue, 0.4);$border-radius: 0.214rem !default;
+$input-border-color: $gray-500 !default;
+$input-box-shadow: inset 0 0 6px rgba($black, 0.3) !default;
 
-$input-placeholder-color: $gray-400 !default;
+$btn-box-shadow: 0 1px 6px rgba($black, 0.5) !default;
+
+$border-radius-lg: .25rem !default;
+
+$enable-gradients: true !default;
+$enable-rounded: false !default;
+$enable-shadows: true !default;
