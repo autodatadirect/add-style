@@ -1,7 +1,5 @@
 @import "variables";
-
-// ~ is used by Webpack to identify a node module, see importer.js
 @import "~bootstrap/scss/bootstrap";
-
 @import "mixins";
+@import "buttons";
 @import "custom";
