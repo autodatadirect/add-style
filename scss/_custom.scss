@@ -38,3 +38,8 @@ select.form-control {
   padding-bottom: $custom-select-padding-y;
   cursor: pointer;
 }
+
+label {
+  display: inline-block;
+  margin-bottom: .25rem;
+}
