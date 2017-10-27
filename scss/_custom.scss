@@ -43,3 +43,9 @@ label {
   display: inline-block;
   margin-bottom: .25rem;
 }
+
+.invalid-feedback {
+  margin-top: -2px;
+  font-size: .8rem;
+  position: absolute;
+}
