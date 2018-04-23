@@ -1,10 +1,6 @@
 .btn {
-  border-radius: $border-radius-lg;
-  cursor: pointer;
-}
-
-@each $color, $value in $theme-colors {
-  .btn-outline-#{$color} {
-    border-radius: 0;
+  &.disabled,
+  &:disabled {
+    cursor: not-allowed;
   }
 }
