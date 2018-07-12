@@ -39,6 +39,12 @@ select.form-control {
   cursor: pointer;
 }
 
+input[type="radio"],
+input[type="checkbox"],
+label[for] {
+  cursor: pointer;
+}
+
 label {
   display: inline-block;
   margin-bottom: .25rem;
