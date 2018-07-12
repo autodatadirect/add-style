@@ -1,135 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-  <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
   <script src="js/styleguide.js"></script>
   <title>Auto Data Direct, Inc. Style Guide</title>
 </head>
 
 <body>
-<div class="container-fluid">
-  <div class="row bg-gray-300">
-    <div class="col">
-      <img src="img/logo-add.png" alt="Auto Data Direct, Inc." class="logo"/>
-    </div>
-    <div class="col">
-      <h1 class="guide-title anim-text-flow">Style Guide</h1>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-2 bg-gray-100 column-border">
-      <div class="menu">
-        <div class="text-center"><strong>Main Menu</strong></div>
-        <ul id="menu"></ul>
+  <div class="container-fluid">
+    <div class="row bg-gray-300">
+      <div class="col">
+        <img src="img/logo-add.png" alt="Auto Data Direct, Inc." class="logo" />
+      </div>
+      <div class="col">
+        <h1 class="guide-title anim-text-flow">Style Guide</h1>
       </div>
     </div>
-    <div class="col-10 page-content">
-      <!-- CONTENT AREA -->
-      <div class="container pb-5">
-        <h2 class="h2 uiguideTitle">Form Controls</h2>
-        <p>Examples and usage guidelines for form control styles, layout options, and custom components for creating a
-          wide
-          variety of forms.</p>
 
-        <h3 class="underline">Input types</h3>
-        <p>Be sure to use an appropriate <code>type</code> attribute on all inputs (e.g., for <code>email</code> address
-          or
-          <code>number</code> for numerical information) to take advantage of newer input controls like email
-          verification,
-          number selection, and more.</p>
-        <p>Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required
-          classes,
-          form layout, and more.</p>
-        <div class="row">
-          <form>
-
-            <div class="form-group col-sm-4">
-              <label for="sampleinput">Sample Input</label>
-              <input type="text" class="form-control" id="sampleinput" aria-describedby="sampleInput">
-            </div>
-
-            <div class="form-group col-sm-4">
-              <label for="sampleinput">Sample Input With Error</label>
-              <input type="text" class="form-control is-invalid" id="sampleinput" aria-describedby="sampleInput">
-              <div class="invalid-feedback">Required</div>
-            </div>
-
-            <div class="form-group col-sm-4">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                     placeholder="me@example.com">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-
-            <div class="form-group col-sm-4">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-check col-sm-4">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input">
-                Check me out
-              </label>
-            </div>
-            <div class="form-group col-sm-4">
-              <label for="exampleFormControlSelect1">Example select</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1 gy</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-
-            <div class="form-group col-sm-4">
-              <label for="exampleFormControlSelect2">Example multiple select</label>
-              <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group col-sm-4">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-            <button type="button" class="btn btn-primary">Primary Button</button>
-            <button type="button" class="btn btn-primary" disabled>Primary Disabled</button>
-            <button type="button" class="btn btn-secondary">Secondary Button</button>
-            <button type="button" class="btn btn-secondary" disabled>Secondary Disabled</button>
-            <br><br>
-            <button type="button" class="btn btn-outline-primary">Primary Button</button>
-            <button type="button" class="btn btn-outline-secondary">Secondary Button</button>
-            <button type="button" class="btn btn-outline-primary" disabled>Primary Disabled</button>
-            <button type="button" class="btn btn-outline-secondary" disabled>Secondary Disabled</button>
-            <button type="button" class="btn btn-light">Light Button</button>
-            <button type="button" class="btn btn-light" disabled>Light  Disabled</button>
-          </form>
+    <div class="row">
+      <div class="col-2 bg-gray-100 column-border">
+        <div class="menu">
+          <div class="text-center">
+            <strong>Main Menu</strong>
+          </div>
+          <ul id="menu"></ul>
         </div>
-        <div class="row my-3">
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Left</button>
-            <button type="button" class="btn btn-secondary">Middle</button>
-            <button type="button" class="btn btn-secondary">Right</button>
+      </div>
+      <div class="col-10 page-content">
+        <!-- CONTENT AREA -->
+        <div class="container pb-5">
+          <h2 class="h2 uiguideTitle">Form Controls</h2>
+          <p>Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide
+            variety of forms.</p>
+
+          <h3 class="underline">Input types</h3>
+          <p>Be sure to use an appropriate
+            <code>type</code> attribute on all inputs (e.g., for
+            <code>email</code> address or
+            <code>number</code> for numerical information) to take advantage of newer input controls like email verification, number
+            selection, and more.</p>
+          <p>Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes,
+            form layout, and more.</p>
+          <div class="row">
+            <form>
+              <div class="col-sm-4">
+
+                <div class="form-group">
+                  <label for="sampleinput">Sample Input</label>
+                  <input type="text" class="form-control" id="sampleinput" aria-describedby="sampleInput">
+                </div>
+
+                <div class="form-group">
+                  <label for="sampleinputError">Sample Input With Error</label>
+                  <input type="text" class="form-control is-invalid" id="sampleinputError" aria-describedby="sampleInput">
+                  <div class="invalid-feedback">Required</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="me@example.com">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+
+                <div class="form-check mb-4">
+                  <input type="checkbox" class="form-check-input" id="someId">
+                  <label class="form-check-label" for="someId">Check me out</label>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Example select</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1 gy</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlSelect2">Example multiple select</label>
+                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+              </div>
+            </form>
+          </div>
+          <div class="row my-3">
+            <div class="col-12">
+              <button type="button" class="btn btn-primary">Primary Button</button>
+              <button type="button" class="btn btn-primary" disabled>Primary Disabled</button>
+              <button type="button" class="btn btn-secondary">Secondary Button</button>
+              <button type="button" class="btn btn-secondary" disabled>Secondary Disabled</button>
+              <br>
+              <br>
+              <button type="button" class="btn btn-outline-primary">Primary Button</button>
+              <button type="button" class="btn btn-outline-secondary">Secondary Button</button>
+              <button type="button" class="btn btn-outline-primary" disabled>Primary Disabled</button>
+              <button type="button" class="btn btn-outline-secondary" disabled>Secondary Disabled</button>
+              <button type="button" class="btn btn-light">Light Button</button>
+              <button type="button" class="btn btn-light" disabled>Light Disabled</button>
+            </div>
+            <div class="col-12 mt-4">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Left</button>
+                <button type="button" class="btn btn-secondary">Middle</button>
+                <button type="button" class="btn btn-secondary">Right</button>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- END CONTENT AREA -->
       </div>
-      <!-- END CONTENT AREA -->
     </div>
   </div>
-</div>
 </body>
 
 </html>
