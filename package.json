@@ -6,17 +6,19 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "^4.3.1",
-    "node-sass": "^4.11.0",
+    "bootstrap": "^4.4.1",
     "nodemon": "^1.18.4"
   },
   "peerDependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.4.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node-sass --output-style compressed --precision 6 --importer importer.js scss/style.scss dist/add-style.min.css",
     "build-docs": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 --importer importer.js docs/style.scss docs/style.css",
     "watch": "nodemon --watch scss --ignore dist/ -e scss -x \"npm run build\""
+  },
+  "dependencies": {
+    "node-sass": "^4.13.1"
   }
 }
