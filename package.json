@@ -7,8 +7,8 @@
   "license": "MIT",
   "devDependencies": {
     "bootstrap": "^4.4.1",
-    "nodemon": "^1.18.4",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.14.0",
+    "nodemon": "^1.19.4"
   },
   "peerDependencies": {
     "bootstrap": "^4.4.1"
