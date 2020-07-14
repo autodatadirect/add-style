@@ -1,14 +1,14 @@
 {
   "name": "addstrap",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Base Bootstrap file for Auto Data Direct, Inc.",
   "main": "index.html",
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "bootstrap": "^4.5.0",
-    "nodemon": "^1.18.4",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.14.0",
+    "nodemon": "^1.19.4"
   },
   "peerDependencies": {
     "bootstrap": "^4.4.1"
