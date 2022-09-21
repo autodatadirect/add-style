@@ -6,12 +6,12 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.4.1 || ^5.1.0",
     "node-sass": "^4.14.0",
     "nodemon": "^1.19.4"
   },
   "peerDependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1 || ^5.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
