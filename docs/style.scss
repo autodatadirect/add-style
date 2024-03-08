@@ -14,7 +14,7 @@
 
 .guide-title {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 500;
   margin-top: 6px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -34,7 +34,7 @@
   $animationDuration: 50;
   $animationElement: span;
   $animationElementsCount: 100;
-  $delayBetweenLetters: 0.2;
+  $delayBetweenLetters: 0.15;
 /*
   Elements settings
 */
@@ -169,12 +169,12 @@ img {
  */
 .h2 {
   font-weight: $font-weight-light;
-  color: darken(theme-color(primary), 10%);
+  color: darken($primary, 10%);
 }
 
 .h3 {
   font-weight: $font-weight-light;
-  color: darken(theme-color(primary), 5%);
+  color: darken($primary, 5%);
   margin-top: 20px;
 }
 
