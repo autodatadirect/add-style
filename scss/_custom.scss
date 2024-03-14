@@ -8,7 +8,7 @@ h3.underline,
 h4.underline,
 h5.underline,
 h6.underline {
-  border-bottom: 1px solid darken(theme-color(primary), 10%);
+  border-bottom: 1px solid darken($primary, 10%);
   margin-bottom: $headings-margin-bottom;
   line-height: $headings-line-height;
 }
@@ -54,4 +54,9 @@ label {
   margin-top: -2px;
   font-size: .8rem;
   position: absolute;
+}
+
+.isInvalid input, .isInvalid input:focus, .isInvalid select, .isInvalid select:focus, .isInvalid textarea, .isInvalid textarea:focus, .form-control.is-invalid {
+  background-image: none !important;
+  background-color: #ffe6e6;
 }
