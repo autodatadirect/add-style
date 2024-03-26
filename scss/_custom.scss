@@ -56,7 +56,14 @@ label {
   position: absolute;
 }
 
-.isInvalid input, .isInvalid input:focus, .isInvalid select, .isInvalid select:focus, .isInvalid textarea, .isInvalid textarea:focus, .form-control.is-invalid {
-  background-image: none !important;
+.form-control.is-invalid, .form-select.is-invalid {
   background-color: #ffe6e6;
+}
+
+.form-control.is-invalid {
+  background-image: none;
+}
+
+.form-select.is-invalid {
+  --bs-form-select-bg-icon: none !important;
 }
